@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "git add package.json && git commit -m \"Remove gh-pages branch and update deploy script\" && git push origin main"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

@@ -9,18 +9,18 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "git add package.json && git commit -m \"Remove gh-pages branch and update deploy script\" && git push origin main"
+    "deploy": "git add dist && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix dist origin main"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@vitejs/plugin-react": "^1.0.0",
     "autoprefixer": "^10.4.18",
     "eslint": "^9.9.1",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -31,7 +31,7 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
-    "vite": "^5.4.2"
+    "vite": "^2.0.0"
   },
   "homepage": "https://saisanjay21.github.io/protfolio/"
 }

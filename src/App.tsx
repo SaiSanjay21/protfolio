@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, ExternalLink, Code2, Briefcase, User, ChevronDown } from 'lucide-react';
+import profilePhoto from './assets/SUR_5996.jpg';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600 transition">
                   <Linkedin size={24} />
                 </a>
-                <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-indigo-600 transition">
+                <a href="mailto:saisanjaybandarupalli.a@gmail.com" className="text-gray-600 hover:text-indigo-600 transition">
                   <Mail size={24} />
                 </a>
               </div>
@@ -43,8 +44,7 @@ function App() {
             <div className="flex justify-center lg:justify-end">
               <div className="profile-glow">
                 <img
-                  src="/your-repo-name/src/assets/SUR_5996.JPG"
-                  alt="Your Name"
+                  src={profilePhoto} alt="Profile"
                   className="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-white shadow-xl animate-float relative z-10"
                 />
               </div>
